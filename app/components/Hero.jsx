@@ -48,9 +48,12 @@ function Hero() {
         </div>
 
         <div className=" hidden lg:flex lg:w-[50%] bg-sky-50 ">
-          <img
+          <Image
             src="https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg"
             className="h-[470px] transform skew-x-[-6deg]  "
+            width={1000}
+            height={800}
+            alt="image is missing"
           />
         </div>
       </div>

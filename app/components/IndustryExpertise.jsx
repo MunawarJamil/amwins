@@ -1,6 +1,6 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
-
+import Image from "next/image";
 const industries = [
   "Construction",
   "Energy",
@@ -41,10 +41,12 @@ const IndustryExpertise = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          <img
+          <Image
             src="https://media.istockphoto.com/id/846859964/photo/robots-welding-in-a-car-factory.jpg?s=612x612&w=0&k=20&c=YLDHM61cwwC7xPnzP8nlBEbmJLB1sqgMr9W6B1m2WBk="
             alt="Healthcare professional"
             className="rounded-lg shadow-lg w-full h-full object-cover"
+            width={1000}
+            height={800}
           />
         </div>
       </div>
@@ -62,10 +64,12 @@ const IndustryExpertise = () => {
 
         <div className="flex flex-col lg:flex-row items-center lg:items-start bg-white p-6 rounded-2xl shadow-md">
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
-            <img
+            <Image
               src="https://www.investopedia.com/thmb/03_nCwEf2AMtnDLH2QkOEuQxiIM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1084171152-8445a490b5894f0a9bb588dbfc2ac22d.jpg" // Replace with the actual path of your image
               alt="Becky Patel"
               className=" w-full h-full "
+              width={1000}
+              height={800}
             />
           </div>
 

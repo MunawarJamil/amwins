@@ -1,6 +1,8 @@
+
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from '@/components/ui/button';
+import Image from "next/image";
 function About() {
   return (
     <>
@@ -100,10 +102,19 @@ function About() {
           </Card>
 
           <div className="flex justify-center items-center">
-            <img
+          {/* <Image
+    src="https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg"
+    alt="Brokerage"
+    className="rounded-md object-cover"
+    layout="fill" 
+  /> */}
+
+<Image
               src="https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg"
               alt="Brokerage"
               className="rounded-md object-cover w-full h-full"
+              width={1200}
+              height={800}
             />
           </div>
         </div>

@@ -31,7 +31,7 @@ const GlobalReach = () => {
   return (
     <div className="flex flex-col w-[80%] mx-auto md:flex-row bg-white shadow-lg rounded-lg overflow-hidden">
       <div className="w-full md:w-1/2">
-        <img src="https://www.shutterstock.com/image-photo/teamwork-meeting-tablet-business-people-600nw-2251938325.jpg" alt="Global Reach"  className="object-cover h-full w-full" />
+        <Image src="https://www.shutterstock.com/image-photo/teamwork-meeting-tablet-business-people-600nw-2251938325.jpg" alt="Global Reach"  className="object-cover h-full w-full" width={1000} height={800} />
       </div>
       <div className="w-full md:w-1/2 p-6 bg-blue-100">
         <h2 className="text-2xl font-bold text-gray-800 mb-4">Our global reach, your competitive advantage</h2>

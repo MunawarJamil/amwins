@@ -44,11 +44,13 @@ export default function InsuranceResources() {
       </div>
 
       <div className="hidden  lg:flex ">
-        <img 
+        <Image 
           src="https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg" 
           alt="Business professionals walking" 
           
           className="rounded-lg shadow-md "
+          width={1000}
+          height={800}
         />
       </div>
     </div>
