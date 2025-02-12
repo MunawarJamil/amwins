@@ -51,15 +51,15 @@ function Hero() {
           <Image
             src="https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg"
             className="h-[470px] transform skew-x-[-6deg]  "
-            width={1000}
+            width={700}
             height={800}
             alt="image is missing"
           />
         </div>
       </div>
 
-      <div className="md:w-[70%] mx-auto text-center px-10 pt-20">
-        <h1 className="text-3xl font-bold ">
+      <div className="md:w-[70%] mx-auto md:text-center  px-7 md:px-10  pt-10 md:pt-20">
+        <h1 className="text-3xl  font-bold ">
           Where market intelligence meets wholesale expertise
         </h1>
         <p className="leading-loose py-10">

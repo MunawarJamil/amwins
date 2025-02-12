@@ -1,7 +1,6 @@
-
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 function About() {
   return (
@@ -66,7 +65,7 @@ function About() {
         </div>
       </section> */}
 
-      <div className="bg-[#002F4B] min-h-screen p-8 text-white">
+      <div className="bg-[#002F4B] min-h-screen md:p-7 text-white">
         {/* Navigation Tabs */}
         <div className="hidden lg:flex justify-center space-x-8 border-b border-[#1E4A64] pb-4 mb-8">
           <button className="text-[#00AEEF] border-b-2 border-[#00AEEF] pb-2">
@@ -101,18 +100,13 @@ function About() {
             </CardContent>
           </Card>
 
-          <div className="flex justify-center items-center">
-          {/* <Image
-    src="https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg"
-    alt="Brokerage"
-    className="rounded-md object-cover"
-    layout="fill" 
-  /> */}
+          <div className="hidden md:flex justify-center items-center">
+         
 
-<Image
+            <Image
               src="https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg"
               alt="Brokerage"
-              className="rounded-md object-cover w-full h-full"
+              className="rounded-md  object-cover w-full h-full"
               width={1200}
               height={800}
             />
@@ -120,7 +114,7 @@ function About() {
         </div>
 
         {/* Service Links */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+        <div className="grid grid-cols-1 px-3 md:grid-cols-2 gap-4 mt-8">
           {[
             "Property",
             "Casualty",

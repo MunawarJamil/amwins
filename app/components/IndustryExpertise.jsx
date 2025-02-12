@@ -17,12 +17,12 @@ const industries = [
 const IndustryExpertise = () => {
   return (
     <>
-      <div className="max-w-[80%] my-20 mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className=" w-full md:max-w-[80%] my-10 md:my-20 mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h2 className="text-2xl font-bold text-gray-800 mb-2">
             In-depth industry expertise
           </h2>
-          <p className="text-sm text-gray-600 mb-6">
+          <p className=" text-gray-600 mb-6">
             Our specialty practices are comprised of teams focused on specific
             industries, and the risks that accompany them.
           </p>
@@ -52,20 +52,20 @@ const IndustryExpertise = () => {
       </div>
 
       {/* ==== */}
-      <div className="bg-gray-50 p-8 rounded-2xl shadow-lg max-w-[80%] mx-auto">
+      <div className="bg-gray-50 p-8 rounded-2xl shadow-lg w-full  md:max-w-[80%] mx-auto">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">
           People of Amwins
         </h1>
-        <p className="text-sm text-gray-600 mb-6">
+        <p className="text text-gray-600 mb-6">
           Collaborators. Experts. Partners.
           <br />
           When you work with Amwins, our team is your team.
         </p>
 
-        <div className="flex flex-col lg:flex-row items-center lg:items-start bg-white p-6 rounded-2xl shadow-md">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start bg-white md:p-6 rounded-2xl shadow-md">
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
             <Image
-              src="https://www.investopedia.com/thmb/03_nCwEf2AMtnDLH2QkOEuQxiIM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1084171152-8445a490b5894f0a9bb588dbfc2ac22d.jpg" // Replace with the actual path of your image
+              src="https://www.investopedia.com/thmb/03_nCwEf2AMtnDLH2QkOEuQxiIM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1084171152-8445a490b5894f0a9bb588dbfc2ac22d.jpg"
               alt="Becky Patel"
               className=" w-full h-full "
               width={1000}
