@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -9,6 +9,9 @@ const tabData = {
     title: "Brokerage",
     description:
       "As a leading excess and surplus lines specialty insurance broker, Amwins Brokerage handles difficult placements and unique opportunities across all lines. We’re more than your partner — we’re on your team and in the trenches, working to consistently deliver broad resources and unmatched access to leading insurance markets worldwide. You expect quality specialty insurance service — we’re here to deliver it.",
+
+    image:
+      "https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg",
     services: [
       "Property",
       "Casualty",
@@ -20,6 +23,8 @@ const tabData = {
     title: "Small Accounts",
     description:
       "Small accounts need specialized attention to manage their unique insurance requirements efficiently. Our team ensures personalized service for every client.",
+    image:
+      "https://www.freshbooks.com/wp-content/uploads/2022/02/types-of-accounts.jpg",
     services: [
       "Personal Lines",
       "Small Business",
@@ -31,6 +36,7 @@ const tabData = {
     title: "Underwriting",
     description:
       "Our underwriting services provide precise risk assessments, ensuring optimal coverage with a comprehensive understanding of each client's needs.",
+    image: "https://miro.medium.com/v2/resize:fit:514/0*RzXWmLDv7eHs-GUd.jpg",
     services: [
       "Risk Evaluation",
       "Claims Management",
@@ -42,6 +48,7 @@ const tabData = {
     title: "Global Risks",
     description:
       "Global risk management requires a deep understanding of international markets and regulatory landscapes. We deliver solutions for diverse global challenges.",
+    image: "https://thecyberexpress.com/wp-content/uploads/Risk-Management.jpg",
     services: [
       "International Coverage",
       "Cross-Border Risks",
@@ -53,6 +60,8 @@ const tabData = {
     title: "Group Benefits",
     description:
       "Our group benefits programs support businesses in providing competitive and comprehensive packages to their employees.",
+    image:
+      "https://cdn.turtlemint.com/wp-content/uploads/All-about-Employees-State-Insurance-Scheme-e1617953584805.jpg",
     services: [
       "Health Insurance",
       "Retirement Plans",
@@ -74,13 +83,13 @@ function About() {
   return (
     <div className="bg-[#002F4B] min-h-screen md:p-7 text-white">
       {/* Navigation Tabs */}
-      <div className="hidden lg:flex justify-center space-x-8 border-b border-[#1E4A64] pb-4 mb-8">
+      <div className="flex  overflow-x-auto pt-3 px-5 lg:justify-center space-x-8 border-b border-[#1E4A64] pb-4 mb-8">
         {Object.keys(tabData).map((tab) => (
           <button
             key={tab}
-            className={`pb-2 ${
+            className={`pb-2 whitespace-nowrap ${
               activeTab === tab
-                ? "text-[#00AEEF] border-b-2 border-[#00AEEF]"
+                ? "text-[#00AEEF] border-b-2    border-[#00AEEF]"
                 : "hover:text-[#00AEEF]"
             }`}
             onClick={() => handleTabClick(tab)}
@@ -107,7 +116,7 @@ function About() {
 
         <div className="hidden md:flex justify-center items-center">
           <Image
-            src="https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg"
+            src={activeContent.image}
             alt={activeContent.title}
             className="rounded-md object-cover w-full h-full"
             width={1200}
