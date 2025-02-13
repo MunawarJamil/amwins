@@ -10,16 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
-
+ 
 function Navbar() { const [openDropdown, setOpenDropdown] = useState(null);
 
   const menuItems = [
