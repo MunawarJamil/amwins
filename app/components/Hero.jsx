@@ -5,7 +5,7 @@ function Hero() {
   return (
     <>
       <div className="lg:flex lg:justify-between  ">
-        <div className=" text-center bg-sky-50 md:container lg:w-[55%] md:mx-auto">
+        <div className=" text-center bg-sky-50 md:container lg:w-[55%] lg:h-[600px] lg:pt-16 md:mx-auto">
           <p className=" text-sky-400 pt-10 px-10  text-2xl  ">
             Read Now: State of the Markete 2025 Outlook
           </p>
@@ -47,7 +47,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className=" hidden lg:flex lg:w-[50%] bg-sky-50 ">
+        <div className=" hidden lg:flex lg:w-[50%] bg-sky-50 lg:h-[600px] lg:pt-16 ">
           <Image
             src="https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg"
             className="h-[470px] transform skew-x-[-6deg]  "
