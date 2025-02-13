@@ -10,7 +10,42 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-function Navbar() {
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
+
+function Navbar() { const [openDropdown, setOpenDropdown] = useState(null);
+
+  const menuItems = [
+    {
+      title: "Solutions",
+      items: ["Construction", "Energy", "Environmental", "Healthcare", "Hospitality + Entertainment", "Life Sciences", "Manufacturing + Distribution", "Public Entity", "Real Estate", "Transportation"],
+    },
+    {
+      title: "Industries",
+      items: ["Finance", "Technology", "Retail", "Healthcare", "Education", "Energy", "Government"],
+    },
+    {
+      title: "Who We Are",
+      items: ["About Us", "Leadership", "Careers", "News & Events", "Our Values"],
+    },
+    {
+      title: "Resources + Insights",
+      items: ["Blog", "Case Studies", "Webinars", "White Papers"],
+    },
+    {
+      title: "Contact Us",
+      items: ["Support", "Locations", "Partnerships"],
+    },
+  ];
+
+
   const [toggleOpen, setToggleOpen] = useState(false);
   const onclickMenu = () => {
     setToggleOpen(!toggleOpen);
@@ -22,12 +57,31 @@ function Navbar() {
       <nav className="flex sticky top-0 z-10 justify-between  mx-auto bg-white p-5 lg:px-0 items-center  md:justify-around  md:mx-auto  ">
         <h1 className="text-2xl font-bold">AMWINS</h1>
 
-        <ul className="hidden lg:flex gap-10 font-semibold  ">
-          <li> RESOURCES + INSIGHTS</li>
-          <li> WHO WE ARE</li>
-          <li> CONTACT US</li>
-          <li> QOUTE ONLINE</li>
-        </ul>
+        <ul className="hidden lg:flex gap-10 font-semibold text-black">
+        {menuItems.map((menu, index) => (
+          <li
+            key={index}
+            className="relative"
+            onMouseEnter={() => setOpenDropdown(menu.title)}
+             onMouseLeave={() => setOpenDropdown(null)
+
+            }
+          >
+            <span className="cursor-pointer">{menu.title}</span>
+
+            {/* Dropdown Content */}
+            {openDropdown === menu.title && (
+              <ul className="absolute left-0 mt-0 w-56 bg-white shadow-lg rounded-md border border-gray-200 text-black">
+                {menu.items.map((item, idx) => (
+                  <li key={idx} className="px-4 py-2 mt-0 hover:bg-gray-100 cursor-pointer">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
 
         <div className="flex gap-3 items-center">
           <span className="text-sky-400">
