@@ -10,6 +10,8 @@ const nextConfig = {
       "miro.medium.com",
       "thecyberexpress.com",
       "cdn.turtlemint.com",
+      "i.ytimg.com",
+      "i0.wp.com",
     ],
   },
 };

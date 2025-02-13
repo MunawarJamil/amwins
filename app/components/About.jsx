@@ -11,7 +11,7 @@ const tabData = {
       "As a leading excess and surplus lines specialty insurance broker, Amwins Brokerage handles difficult placements and unique opportunities across all lines. We’re more than your partner — we’re on your team and in the trenches, working to consistently deliver broad resources and unmatched access to leading insurance markets worldwide. You expect quality specialty insurance service — we’re here to deliver it.",
 
     image:
-      "https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg",
+      "https://i.ytimg.com/vi/PAym-3EOzs0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDxCAuz9au2cY5Ft0Ff3cJ027MErg",
     services: [
       "Property",
       "Casualty",
