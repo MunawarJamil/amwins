@@ -45,14 +45,14 @@ function Navbar() { const [openDropdown, setOpenDropdown] = useState(null);
     <>
       {/* Navbar for mobile screens */}
 
-      <nav className="flex sticky top-0 z-10 justify-between  mx-auto bg-white p-5 lg:px-0 items-center  md:justify-around  md:mx-auto  ">
-        <h1 className="text-2xl font-bold">AMWINS</h1>
+      <nav className="flex sticky top-0 z-10 justify-between  mx-auto bg-white p-5 lg:px-0 items-center  md:justify-evenly lg:pt-7  md:mx-auto  ">
+        <h1 className="text-3xl tracking-wider font-semibold">AMWINS</h1>
 
         <ul className="hidden lg:flex gap-10 font-semibold text-black">
         {menuItems.map((menu, index) => (
           <li
             key={index}
-            className="relative"
+            className="relative text-lg font-semibold"
             onMouseEnter={() => setOpenDropdown(menu.title)}
              onMouseLeave={() => setOpenDropdown(null)
 

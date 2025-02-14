@@ -81,7 +81,7 @@ function About() {
   const activeContent = tabData[activeTab];
 
   return (
-    <div className="bg-[#002F4B] min-h-screen md:p-7 text-white">
+    <div className="bg-[#002F4B] min-h-screen max-w-[74rem] mx-auto md:p-7 text-white">
       {/* Navigation Tabs */}
       <div className="flex  overflow-x-auto pt-3 px-5 lg:justify-center space-x-8 border-b border-[#1E4A64] pb-4 mb-8">
         {Object.keys(tabData).map((tab) => (
