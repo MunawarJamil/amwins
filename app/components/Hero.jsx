@@ -46,10 +46,9 @@ function Hero() {
             </div>
           </div>
         </div>
-        </div>
+      </div>
 
-
- {/*
+      {/*
         <div className=" hidden lg:flex lg:w-[50%] bg-sky-50 lg:h-[600px] lg:pt-16 ">
           <Image
             src="https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg"
@@ -61,10 +60,12 @@ function Hero() {
         </div>
       </div> */}
 
-<div className="hidden lg:flex   w-[77%] mx-auto mt-5 bg-slate-700">
-  <div className="bg-sky-100 w-[76%] h-screen "
-   style={{ clipPath: "polygon(0 0, 100% 0, 64% 100%, 0 100%)" }}>
-<p className=" text-sky-400 pt-20 pl-20 px-10  text-2xl  ">
+      {/* <div className="hidden lg:flex   w-[77%] mx-auto mt-5 bg-slate-700">
+        <div
+          className="bg-sky-100 w-[76%] h-screen "
+          style={{ clipPath: "polygon(0 0, 100% 0, 64% 100%, 0 100%)" }}
+        >
+          <p className=" text-sky-400 pt-20 pl-20 px-10  text-2xl  ">
             Read Now: State of the Markete 2025 Outlook
           </p>
           <h1 className="text-5xl pl-20 font-semibold leading-relaxed px-10 py-5">
@@ -79,7 +80,7 @@ function Hero() {
             <div>
               <p className="text-2xl   font-bold text-sky-400">/$39B</p>
               <p>annual premium placements</p>
-              </div>
+            </div>
             <div>
               <p className="text-2xl font-bold text-sky-400">/ 37,124</p>
               <p>underwriter relationships</p>
@@ -90,7 +91,7 @@ function Hero() {
             </div>
             <div>
               <p className="text-2xl font-bold text-sky-400">/ 7,325</p>
-              <p>employees worldwide  </p>
+              <p>employees worldwide </p>
             </div>
 
             <div>
@@ -103,28 +104,31 @@ function Hero() {
               <p>Anual submissions</p>
             </div>
           </div>
+        </div>
 
+        <div
+          className="bg-sky-600 absolute left-[53rem] w-[35%] h-screen"
+          style={{ clipPath: "polygon(60% 0, 100% 0, 1000% 100%, 0 100%)" }}
+        >
+          {/* <Image
+            src="https://plus.unsplash.com/premium_photo-1661682621668-c126c4a060b1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybCUyMGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D"
+            alt="cover image "
+            width={500}
+            height={500}
+            className="w-full h-full object-cover "
+          />  
+        </div>
+      </div> */}  
 
-
-
-
-
-
-
-  </div>
-
-  <div className="bg-sky-600 absolute left-[53rem] w-[35%] h-screen"
-  
-  
-  style={{ clipPath: "polygon(60% 0, 100% 0, 1000% 100%, 0 100%)" }}
-  
-  >
-<img src="https://plus.unsplash.com/premium_photo-1661682621668-c126c4a060b1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybCUyMGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D" alt="" className="w-full h-full object-cover " />
-  </div>
-</div>
-
-
-
+      <div className="header hidden lg:flex justify-center">
+      <Image
+            src="/image.png"
+            className=" "
+            width={1200}
+            height={1200}
+            alt="image is missing"
+          />
+      </div>
 
       <div className="md:w-[70%] mx-auto md:text-center  px-7 md:px-10  pt-10 md:pt-20">
         <h1 className="text-3xl  font-bold ">

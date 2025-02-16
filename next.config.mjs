@@ -12,6 +12,7 @@ const nextConfig = {
       "cdn.turtlemint.com",
       "i.ytimg.com",
       "i0.wp.com",
+      "plus.unsplash.com", 
     ],
   },
 };

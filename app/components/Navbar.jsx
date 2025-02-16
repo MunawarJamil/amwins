@@ -9,22 +9,48 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Image from "next/image";
 
- 
-function Navbar() { const [openDropdown, setOpenDropdown] = useState(null);
+function Navbar() {
+  const [openDropdown, setOpenDropdown] = useState(null);
 
   const menuItems = [
     {
       title: "Solutions",
-      items: ["Construction", "Energy", "Environmental", "Healthcare", "Hospitality + Entertainment", "Life Sciences", "Manufacturing + Distribution", "Public Entity", "Real Estate", "Transportation"],
+      items: [
+        "Construction",
+        "Energy",
+        "Environmental",
+        "Healthcare",
+        "Hospitality + Entertainment",
+        "Life Sciences",
+        "Manufacturing + Distribution",
+        "Public Entity",
+        "Real Estate",
+        "Transportation",
+      ],
     },
     {
       title: "Industries",
-      items: ["Finance", "Technology", "Retail", "Healthcare", "Education", "Energy", "Government"],
+      items: [
+        "Finance",
+        "Technology",
+        "Retail",
+        "Healthcare",
+        "Education",
+        "Energy",
+        "Government",
+      ],
     },
     {
       title: "Who We Are",
-      items: ["About Us", "Leadership", "Careers", "News & Events", "Our Values"],
+      items: [
+        "About Us",
+        "Leadership",
+        "Careers",
+        "News & Events",
+        "Our Values",
+      ],
     },
     {
       title: "Resources + Insights",
@@ -36,7 +62,6 @@ function Navbar() { const [openDropdown, setOpenDropdown] = useState(null);
     },
   ];
 
-
   const [toggleOpen, setToggleOpen] = useState(false);
   const onclickMenu = () => {
     setToggleOpen(!toggleOpen);
@@ -46,36 +71,43 @@ function Navbar() { const [openDropdown, setOpenDropdown] = useState(null);
       {/* Navbar for mobile screens */}
 
       <nav className="flex sticky top-0 z-10 justify-between  mx-auto bg-white p-5 lg:px-0 items-center  md:justify-evenly lg:pt-7  md:mx-auto  ">
-        <h1 className="text-3xl tracking-wider font-semibold">AMWINS</h1>
+        <h1 className="text-3xl tracking-wider font-semibold">
+          <Image
+            src="/ISA Logo Refinement SVG-White.png"
+            width={70}
+            height={50}
+          />
+        </h1>
 
         <ul className="hidden lg:flex gap-10 font-semibold text-black">
-        {menuItems.map((menu, index) => (
-          <li
-            key={index}
-            className="relative text-lg font-semibold"
-            onMouseEnter={() => setOpenDropdown(menu.title)}
-             onMouseLeave={() => setOpenDropdown(null)
+          {menuItems.map((menu, index) => (
+            <li
+              key={index}
+              className="relative text-lg font-semibold"
+              onMouseEnter={() => setOpenDropdown(menu.title)}
+              onMouseLeave={() => setOpenDropdown(null)}
+            >
+              <span className="cursor-pointer">{menu.title}</span>
 
-            }
-          >
-            <span className="cursor-pointer">{menu.title}</span>
-
-            {/* Dropdown Content */}
-            {openDropdown === menu.title && (
-              <ul className="absolute left-0 mt-0 w-56 bg-white shadow-lg rounded-md border border-gray-200 text-black">
-                {menu.items.map((item, idx) => (
-                  <li key={idx} className="px-4 py-2 mt-0 hover:bg-gray-100 cursor-pointer">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-        ))}
-      </ul>
+              {/* Dropdown Content */}
+              {openDropdown === menu.title && (
+                <ul className="absolute left-0 mt-0 w-56 bg-white shadow-lg rounded-md border border-gray-200 text-black">
+                  {menu.items.map((item, idx) => (
+                    <li
+                      key={idx}
+                      className="px-4 py-2 mt-0 hover:bg-gray-100 cursor-pointer"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
 
         <div className="flex gap-3 items-center">
-          <span className="text-sky-400">
+          <span className="text-[#CA93F5]">
             <Search />
           </span>
           <span className="lg:hidden">
@@ -92,7 +124,7 @@ function Navbar() { const [openDropdown, setOpenDropdown] = useState(null);
         </div>
       </nav>
       {toggleOpen && (
-        <menu className="px-5   w-4/5">
+        <menu className="px-5  w-4/5">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger className="font-semibold text-lg">

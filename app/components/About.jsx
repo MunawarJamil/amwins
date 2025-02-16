@@ -81,16 +81,16 @@ function About() {
   const activeContent = tabData[activeTab];
 
   return (
-    <div className="bg-[#002F4B] min-h-screen max-w-[74rem] mx-auto md:p-7 text-white">
+    <div className="bg-[#002F4B]   mx-auto md:p-7 text-white">
       {/* Navigation Tabs */}
-      <div className="flex  overflow-x-auto pt-3 px-5 lg:justify-center space-x-8 border-b border-[#1E4A64] pb-4 mb-8">
+      <div className="flex   overflow-x-auto pt-3 px-5 lg:justify-center space-x-8 border-b border-[#1E4A64] pb-4 mb-8">
         {Object.keys(tabData).map((tab) => (
           <button
             key={tab}
             className={`pb-2 whitespace-nowrap ${
               activeTab === tab
-                ? "text-[#00AEEF] border-b-2    border-[#00AEEF]"
-                : "hover:text-[#00AEEF]"
+                ? "text-[#CA93F5] border-b-2    border-[#CA93F5]"
+                : "hover:text-[#CA93F5]"
             }`}
             onClick={() => handleTabClick(tab)}
           >
@@ -100,13 +100,13 @@ function About() {
       </div>
 
       {/* Main Content */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 max-w-[74rem] mx-auto md:grid-cols-2 gap-8">
         <Card className="bg-[#003B5C] text-white border-none">
           <CardContent className="p-8">
             <h2 className="text-3xl my-10 font-bold ">{activeContent.title}</h2>
             <p className="mb-4 leading-loose ">{activeContent.description}</p>
             <Button
-              className="text-[#00AEEF] p-0 hover:underline"
+              className="text-[#CA93F5] p-0 hover:underline"
               variant="link"
             >
               LEARN MORE
@@ -126,14 +126,18 @@ function About() {
       </div>
 
       {/* Service Links */}
-      <div className="grid grid-cols-1 px-3 md:grid-cols-2 gap-4 mt-8">
+      <div className="grid grid-cols-1 px-3 max-w-[74rem] mx-auto md:grid-cols-2 gap-4 mt-8">
         {activeContent.services.map((service, index) => (
           <Card
             key={index}
-            className="bg-[#003B5C] text-white border-none flex justify-between items-center p-4"
+            className="bg-[#003B5C] text-white border-none flex justify-between items-center
+             p-4"
           >
             <span className="text-lg font-semibold">{service}</span>
-            <span className="text-[#00AEEF] text-xl">&#9654;</span>
+            <span className="text-[#00AEEF] text-xl">
+              {/* &#9654; */}
+              <Image src="/Layer_1.png" width={20} height={20} alt="icon" />
+            </span>
           </Card>
         ))}
       </div>

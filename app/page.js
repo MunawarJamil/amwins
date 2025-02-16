@@ -6,6 +6,7 @@ import GlobalReach from "./components/GlobalReach";
 
 import Footer from "./components/Footer";
 import IndustryExpertise from "./components/IndustryExpertise";
+import PeopleProfileCard from "./components/PeopleProfileCard";
 export default function Home() {
   const resources = [
     {
@@ -38,9 +39,11 @@ export default function Home() {
       <div className="container mx-auto">
         <Navbar />
         <Hero /> 
+        </div>
+        <div className="w-full mx-auto">
         <About />
-        
-
+        </div>
+        <div className="container mx-auto">
         <InsuranceResources
           title="Explore specialty insurance resources + insights"
           subtitle="Stay up-to-date on emerging industry trends and topics"
@@ -49,6 +52,10 @@ export default function Home() {
         <GlobalReach />
 
         <IndustryExpertise />
+        {/* <div className="lg:w-[80%]  hidden lg:block mx-auto mt-10 lg:mt-20" >
+        <img src="/Container.png"></img>
+        </div> */}
+        <PeopleProfileCard/>
       </div>
       <section className="w-full">
         {" "}
