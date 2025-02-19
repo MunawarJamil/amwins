@@ -1,52 +1,90 @@
-import React from "react";
+import React from 'react';
+import { Facebook, Instagram, Twitter, Send } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#00334d] text-white py-10 mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-600 pb-6 mb-6">
-          <h2 className="text-xl md:text-2xl font-bold text-center md:text-left mb-4 md:mb-0">
-            Subscribe to ASI Brokerage News
-          </h2>
-          <a href="#" className="text-sm text-[#CA93F5] font-medium hover:underline">
-            GET STARTED
-          </a>
-        </div>
-
-        {/* Middle Section */}
-        <div className="flex flex-col md:flex-row justify-between gap-6">
-          {/* Left Column */}
-          <div className="flex flex-col space-y-4 text-center md:text-left">
-            <p className="font-semibold">Get appointed today</p>
-            <a href="#" className="text-sm text-[#CA93F5] hover:underline">
-              LEARN MORE
-            </a>
-            <a href="#" className="text-lg text-white hover:underline">
-              ASI Brokerage
-            </a>
+    <div className=" mt-20 mx-auto px-6 bg-slate-100 shadow-xl py-12 ">
+      <div className="grid grid-cols-1 lg:w-[1200px] mx-auto lg:grid-cols-2 gap-12">
+        {/* Left Column */}
+        <div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-8 text-gray-800">
+            Let's talk<br />
+            about your<br />
+            project.
+          </h1>
+          
+          {/* Background Text */}
+          <div className=" mt-[50] relative">
+            <span className="absolute -z-10 text-8xl font-bold text-gray-100 opacity-70 -left-4 -top-20 mt-8">
+              Let's talk
+            </span>
           </div>
 
-          {/* Right Column */}
-          <div className="grid grid-cols-2 md:grid-cols-1 gap-2 text-center md:text-left">
-            <a href="#" className="font-semibold hover:underline">Solutions</a>
-            <a href="#" className="font-semibold hover:underline">Industries</a>
-            <a href="#" className="font-semibold hover:underline">Who We Are</a>
-            <a href="#" className="font-semibold hover:underline">Locations</a>
-            <a href="#" className="font-semibold hover:underline">Resources + Insights</a>
-            <a href="#" className="font-semibold hover:underline">Bondholder Relations</a>
+          {/* Email Input with Send Icon */}
+          <div className="relative mt-28">
+            <div className="flex items-center gap-2">
+              <div className="relative flex-grow">
+                <input
+                  type="email"
+                  placeholder="eg. johnsmith@email.com"
+                  className="w-full max-w-md py-3 border-b-2 border-gray-300 focus:border-gray-800 outline-none text-gray-600"
+                />
+                <button className="absolute right-3 top-1/2 -translate-y-1/2">
+                  <Send className="w-5 h-5 text-gray-500 hover:text-gray-800 transition-colors rotate-45 mr-32" />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="text-center text-sm mt-8 border-t border-gray-600 pt-4">
-          © 2025 ASI Brokerage. All rights reserved. /
-          <a href="#" className="mx-2 hover:underline">Terms & Conditions</a> /
-          <a href="#" className="mx-2 hover:underline">Privacy</a> /
-          <a href="#" className="mx-2 hover:underline">California Notice at Collection</a>
+        {/* Right Columns */}
+        <div className="grid grid-cols-3 gap-8">
+          {/* Product Column */}
+          <div>
+            <h3 className="font-semibold mb-4 text-gray-800">PRODUCT</h3>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-gray-600 hover:text-gray-800">About</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-800">Product</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-800">Testimonials</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-800">Services</a></li>
+            </ul>
+          </div>
+
+          {/* Menu Column */}
+          <div>
+            <h3 className="font-semibold mb-4 text-gray-800">MENU</h3>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-gray-600 hover:text-gray-800">About</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-800">Product</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-800">Services</a></li>
+            </ul>
+          </div>
+
+          {/* Location Column */}
+          <div>
+            <h3 className="font-semibold mb-4 text-gray-800">LOCATION</h3>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-gray-600 hover:text-gray-800">Indonesia</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-800">USA</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-800">French</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </footer>
+
+      {/* Social Media Icons - Moved to bottom right */}
+      <div className="flex justify-end mt-8 space-x-4">
+        <a href="#" className="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center hover:border-gray-800 transition-colors">
+          <Facebook className="w-5 h-5 text-gray-600 hover:text-gray-800" />
+        </a>
+        <a href="#" className="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center hover:border-gray-800 transition-colors">
+          <Instagram className="w-5 h-5 text-gray-600 hover:text-gray-800" />
+        </a>
+        <a href="#" className="w-10 h-10 border border-gray-300 rounded-full flex items-center justify-center hover:border-gray-800 transition-colors">
+          <Twitter className="w-5 h-5 text-gray-600 hover:text-gray-800" />
+        </a>
+      </div>
+    </div>
   );
 };
 
