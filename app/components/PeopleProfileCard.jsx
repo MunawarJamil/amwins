@@ -5,54 +5,62 @@ import Image from "next/image";
 export default function PeopleProfileCard() {
   return (
     <>
-      <div className="w-full lg:w-[1200px] mx-auto mt-5 lg:mt-20  px-6 py-8 bg-white">
-        <h2 className="text-3xl font-bold text-[#003366] mb-2">
-          People of Amwins
+      <section className="max-w-[1245px] mx-auto px-4 py-12 ">
+        <h2 className="text-4xl font-bold text-gray-900">
+          People of Brokerage
         </h2>
-        <p className="text-gray-600 mb-6">
-          Collaborators. Experts. Partners.
-          <br />
-          When you work with Amwins, our team is your team.
+        <p className="text-gray-600 mt-2">
+          Collaborators. Experts. Partners. When you work with Amwins, our team
+          is your team.
         </p>
-        <div className="flex flex-col lg:flex-row items-start lg:items-center bg-white  rounded-lg overflow-hidden">
-          <div className="w-full h-[300px] lg:h-[400px] lg:w-1/2">
+
+        {/* Card Layout */}
+        <div className="mt-8 border-l-0 border border-b-0 flex flex-col lg:flex-row bg-white   rounded-lg   overflow-hidden">
+          {/* Left Image */}
+          <div className="w-full lg:w-[40%] h-auto">
             <Image
-              src="/people.png"
-              alt="Profile Image"
-              width={800}
-              height={1000}
-              className="object-cover w-full h-full"
+              src="/peopleImage.jpeg" // Replace with your actual image path
+              width={350}
+              height={400}
+              alt="Becky Patel"
+              className=" w-[90%] h-full object-cover"
             />
           </div>
-          <div className="w-full lg:w-2/3 lg:border  mt-7 lg:border-l border-gray-200">
-            <h3 className="text-xl font-bold text-[#003366] mb-2">
+
+          {/* Right Content */}
+          <div className="w-full lg:w-[60%] p-6 flex flex-col   justify-center">
+            <h3 className="text-3xl font-bold text-gray-900 leading-normal">
               Becky Patel
             </h3>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-600 text-md leading-normal mt-2">
               Becky has been instrumental in furthering our mission at Amwins.
               Throughout her 37-year career, she has been recognized for
               countless achievements and proven herself as an industry leader.
               From receiving an Orange County Women in Business award to holding
               a previous Chairman of the Board position for Delta Dental of
-              California, Patel's experience and vision for development is
+              California, Patel’s experience and vision for development is
               evident. Today, Becky brings a signature management style and
               innovative solutions to over 350 people in her role as CEO of
-              Amwins Connect.
+              Amwins Connect.{" "}
             </p>
-            <div className="flex space-x-4 mt-4">
-              <button className="bg-[#D2A0FA] text-white px-4 py-2 rounded-lg shadow-md hover:bg-[#002244]">
+
+            {/* Badges */}
+            <div className="mt-4 flex gap-3">
+              <span className="bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm">
                 San Mateo, CA
-              </button>
-              <button className="bg-gray-100   px-4 py-2 rounded-lg shadow-md hover:bg-gray-200">
+              </span>
+              <span className="bg-gray-800 text-white text-sm font-medium px-4 py-2 rounded-full shadow-sm">
                 Amwins Connect
-              </button>
+              </span>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section className="flex bg-gradient-to-r   from-purple-900 to-gray-900 text-white 
-          text-center rounded-2xl shadow-lg  justify-center max-w-[1200px] mt-10 mx-auto items-center px-6  bg-slate-400 lg:px-20 py-16">
+      <section
+        className="flex bg-gradient-to-r   from-purple-900 to-gray-900 text-white 
+          text-center rounded-2xl shadow-lg  justify-center max-w-[1200px] mt-10 mx-auto items-center px-6  bg-slate-400 lg:px-20 py-16"
+      >
         <div
           className="  
       "

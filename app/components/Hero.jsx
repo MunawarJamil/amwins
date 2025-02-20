@@ -53,7 +53,7 @@ function Hero() {
         <Image
           src="/Hero.png"
           className=""
-          width={1200}
+          width={1210}
           height={1200}
           alt="image is missing"
         />

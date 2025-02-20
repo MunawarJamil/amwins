@@ -12,8 +12,8 @@ export default function InsuranceResources({ title, subtitle, resources }) {
 
   return (
     <>
-      <div className="mt-10 lg:mt-20  px-7  md:w-[80%] mx-auto  ">
-        <h2 className=" text-3xl lg:text-4xl font-bold text-gray-800 mb-2">
+      <div className="mt-10 lg:mt-20  px-7  md:w-[82%] mx-auto   ">
+        <h2 className=" text-3xl lg:text-4xl md:w-[70%] font-bold text-gray-800 mb-2">
           {title}
         </h2>
         <div className="md:flex py-4 justify-between items-center">
@@ -26,7 +26,7 @@ export default function InsuranceResources({ title, subtitle, resources }) {
           </a>
         </div>
       </div>
-      <div className="md:w-[77%] lg:border mb-10 lg:mb-20  mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="md:w-[79%] lg:border mb-10 lg:mb-20  mx-auto p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="flex flex-col justify-center">
           <div className="lg:mt-6 space-y-4">
             {resources.map((resource, index) => (

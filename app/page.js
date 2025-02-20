@@ -37,31 +37,29 @@ export default function Home() {
   ];
   return (
     <>
+      <Navbar className="sticky   top-0" />
       <div className="container mx-auto">
-        <Navbar />
         <Hero />
       </div>
-      <div className="w-full mx-auto">
-        <About />
 
-        <IndustryInsights />
-      </div>
+      <About />
+
+      <IndustryInsights />
+
       <div className="container mx-auto">
         <InsuranceResources
-          title="Explore specialty insurance resources + insights"
+          title="Discover specialized insurance solutions  and valuable insights."
           subtitle="Stay up-to-date on emerging industry trends and topics"
           resources={resources}
         />
         <GlobalReach />
-        </div>
-<div className="w-full ">  
-<IndustryExpertise />
-  </div>
-      
-        
-        
-        <PeopleProfileCard />
-       
+      </div>
+      <div className="w-full ">
+        <IndustryExpertise />
+      </div>
+
+      <PeopleProfileCard />
+
       <section className="w-full">
         {" "}
         <Footer />

@@ -38,7 +38,7 @@ const GlobalReach = () => {
 
   return (
     <motion.div
-      className="flex flex-col w-full md:w-[77%] mx-auto md:flex-row bg-white shadow-lg lg:rounded-lg overflow-hidden"
+      className="flex flex-col w-full md:w-[79%] mx-auto md:flex-row bg-white shadow-lg   overflow-hidden"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
@@ -54,7 +54,7 @@ const GlobalReach = () => {
         />
       </div>
 
-      <div className="w-full p-6 bg-[#F7E5FF] flex flex-col lg:justify-center">
+      <div className="w-full p-6 flex flex-col lg:justify-center">
         <motion.h2
           className="text-2xl md:text-3xl font-bold text-[#003366]  mb-6 lg:text-center  "
           initial={{ x: -100, opacity: 0 }}
@@ -68,7 +68,7 @@ const GlobalReach = () => {
           {regions.map((region, index) => (
             <motion.div
               key={index}
-              className="relative py-4 lg:px-4 border-b-2 hover:shadow-xl hover:border hover:border-l-4 border-[#003366]     cursor-pointer flex items-center justify-between overflow-hidden"
+              className="relative py-4 lg:px-4 border-b-2 hover:shadow-xl hover:border hover:border-l-4 border-[#F7E5FF]     cursor-pointer flex items-center justify-between overflow-hidden"
               whileHover={{ scale: 0.98 }}
               transition={{ duration: 0.1 }}
             >
