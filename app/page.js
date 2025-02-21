@@ -38,9 +38,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto">
-        <Hero />
-      </div>
+
+      <Hero />
 
       <About />
 
