@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { Repeat } from "lucide-react";
 
 export default function PeopleProfileCard() {
   return (
@@ -57,25 +58,37 @@ export default function PeopleProfileCard() {
         </div>
       </section>
 
-      <section
-        className="flex bg-gradient-to-r   from-purple-900 to-gray-900 text-white 
-          text-center rounded-2xl shadow-lg  justify-center max-w-[1200px] mt-10 mx-auto items-center px-6  bg-slate-400 lg:px-20 py-16"
+      <div
+        className="py-10"
+        style={{
+          backgroundImage: "url('/CTA.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
-        <div
-          className="  
-      "
+        <section
+          className="flex bg-gradient-to-r   from-[#11071F] to-[#32155C] text-white 
+          text-center rounded-2xl shadow-lg  justify-center max-w-[1200px]   mx-auto items-center px-6  bg-slate-400 lg:px-20 py-24"
         >
-          <h2 className="text-3xl font-bold mb-4">Let’s Work Together</h2>
-          <p className="text-gray-300 mb-6">
-            Li Europan lingues es membres del sam familie. Lor separat existe un
-            myth. Por scientie, musica, sport etc, litot Europa usa li sam
-            vocabular.
-          </p>
-          <button className="bg-purple-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-600 transition">
-            Get Started
-          </button>
-        </div>
-      </section>
+          <div
+            className="  
+      "
+          >
+            <h2 className="text-3xl font-bold font-[Asap] mb-4">
+              Let’s Work Together
+            </h2>
+            <p className="text-gray-300 font-[Plus Jakarta Sans] mb-6">
+              Li Europan lingues es membres del sam familie. Lor separat existe
+              un myth. Por scientie, musica, sport etc, litot Europa usa li sam
+              vocabular.
+            </p>
+            <button className="bg-purple-500 font-[Plus Jakarta Sans] text-white px-6 py-3 rounded-full font-semibold hover:bg-purple-600 transition">
+              Get Started
+            </button>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

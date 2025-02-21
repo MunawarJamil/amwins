@@ -1,23 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image"; 
+
 
 export default function InsuranceResources() {
-  // const resources = [
-  //   { title: "Construction", icon: "/Layer_1.png", image: "https://t3.ftcdn.net/jpg/04/40/29/94/360_F_440299419_s4b12RfNDJvpplheVDmKdhFGJiHlAYNs.jpg" },
-
-  //   { title: "Energy", icon: "/Layer_1.png", image: "https://i.ytimg.com/vi/PAym-3EOzs0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDxCAuz9au2cY5Ft0Ff3cJ027MErg" },
-
-  //   { title: "Environmental", icon: "/Layer_1.png", image: "https://www.freshbooks.com/wp-content/uploads/2022/02/types-of-accounts.jpg" },
-
-  //   { title: "Healthcare", icon: "/Layer_1.png", image: "https://miro.medium.com/v2/resize:fit:514/0*RzXWmLDv7eHs-GUd.jpg" },
-
-  //   { title: "Hospitality + Entertainment", icon: "/Layer_1.png", image: "https://miro.medium.com/v2/resize:fit:514/0*RzXWmLDv7eHs-GUd.jpg" },
-
-  //   { title: "Life Sciences", icon: "/Layer_1.png", image: "https://miro.medium.com/v2/resize:fit:514/0*RzXWmLDv7eHs-GUd.jpg" }
-  // ];
-
   const industries = [
     {
       name: "Construction Insurance",

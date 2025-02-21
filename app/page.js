@@ -37,7 +37,7 @@ export default function Home() {
   ];
   return (
     <>
-      <Navbar className="sticky   top-0" />
+      <Navbar />
       <div className="container mx-auto">
         <Hero />
       </div>
@@ -60,10 +60,7 @@ export default function Home() {
 
       <PeopleProfileCard />
 
-      <section className="w-full">
-        {" "}
-        <Footer />
-      </section>
+      <section className="w-full"> {/* <Footer /> */}</section>
     </>
   );
 }

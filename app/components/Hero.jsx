@@ -6,8 +6,8 @@ function Hero() {
     <>
       {/* Mobile View */}
       <div className="lg:hidden justify-evenly lg:w-[77%] mx-auto mt-5">
-        <div className="text-center bg-sky-50 md:container lg:w-[55%] lg:pt-16">
-          <p className="text-sky-400 pt-10 px-10 text-2xl">
+        <div className="text-center bg-sky-50 md:container lg:w-[55%] lg:pt-16 ">
+          <p className="text-sky-400 pt-16 px-10 text-2xl">
             Read Now: State of the Market 2025 Outlook
           </p>
           <h1 className="text-3xl font-bold leading-relaxed px-10 py-5">
@@ -104,21 +104,30 @@ function Hero() {
             </div>
           </div>
 
-          <div className="relative h-auto">
+          <div className="relative   h-auto">
             <img
               src="/Rectangle.png"
               alt="cover"
-              className="w-[443px] h-[550px] object-cover rounded-lg"
+              className="w-[463px] h-[550px] object-cover rounded-lg"
             />
             {/* Overlay Cards */}
-            <div className="absolute top-4 right-4 bg-white rounded-lg p-4 shadow-lg max-w-xs">
-              <p className="text-sm font-semibold text-gray-800">
-                Key Growth Metrics, And Business Expansion Trends
+            <div className="absolute top-0 translate-x-[50px] bg-white    px-4 py-2  shadow-lg max-w-auto">
+              <p className=" relative text-sm  flex gap-2  items-center font-semibold text-gray-700">
+                <img src="/black-stars.png" alt="" />
+                <span className="lg:whitespace-nowrap  ">
+                  Key Growth Metrics, And Business Expansion Trends
+                </span>
               </p>
             </div>
-            <div className="absolute bottom-4 left-4 bg-white rounded-lg p-4 shadow-lg max-w-xs">
-              <p className="font-bold text-black text-xl mb-1">Yearly Growth</p>
-              <p className="text-sm text-gray-600">
+
+            <div className="absolute bottom-20 left-[-40] font-[Onest] bg-white rounded-lg p-4 shadow-lg max-w-xs">
+              <p className=" relative text-sm  flex gap-3  items-center font-semibold text-gray-700">
+                <span className="lg:whitespace-nowrap  text-2xl font-bold ">Yearly Growth</span>
+                <div className="bg-black w-7 h-7 rounded-md flex items-center justify-center">
+                  <img src="/arrow-up.png" alt="arrow" className=" w-5 h-5 " />
+                </div>
+              </p>
+              <p className="text-sm text-gray-600 mt-3">
                 Continuous innovation and improved service offerings
               </p>
             </div>

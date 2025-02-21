@@ -1,91 +1,82 @@
 "use client";
-import React, { useState } from "react";
+
+import { useState } from "react";
 import { Menu, X, Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Navbar = () => {
-  const [toggleOpen, setToggleOpen] = useState(false);
-
-  const menuItems = [
-    {
-      title: "Solutions",
-      items: ["Construction", "Energy", "Healthcare"],
-    },
-    { title: "Industries", items: ["Finance", "Technology", "Retail"] },
-    { title: "Who We Are", items: ["About Us", "Careers", "Our Values"] },
-    { title: "Resources + Insights", items: ["Blog", "Webinars"] },
-    { title: "Contact Us", items: ["Support", "Locations"] },
-  ];
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-white sticky top-0 z-10 w-full">
-      <nav className="  bg-white p-5 flex w-[1260px] mx-auto  justify-between items-center">
-        <Link href="/">
-          <Image
-            src="/ISA Logo Refinement SVG-White.png"
-            width={70}
-            height={50}
-            alt="Logo"
-          />
-        </Link>
-
-        {/* Desktop Menu */}
-        <ul className="hidden lg:flex gap-8 font-semibold text-black">
-          {menuItems.map((menu, index) => (
-            <li key={index} className="relative group">
-              <Link href={`/${menu.title.toLowerCase().replace(/ /g, "-")}`}>
-                {menu.title}
-              </Link>
-              <ul className="hidden group-hover:block absolute bg-white shadow-lg  w-48 border rounded-md">
-                {menu.items.map((item, idx) => (
-                  <li key={idx} className="px-4 py-2 hover:bg-gray-100">
-                    <Link href={`/${item.toLowerCase().replace(/ /g, "-")}`}>
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-
-        <div className="flex items-center gap-3">
-          <Search className="text-[#CA93F5]" />
-          <span
-            className="lg:hidden cursor-pointer"
-            onClick={() => setToggleOpen(!toggleOpen)}
-          >
-            {toggleOpen ? (
-              <X className="text-sky-400" />
-            ) : (
-              <Menu className="text-sky-400" />
-            )}
-          </span>
-        </div>
-
-        {/* Mobile Menu */}
-        {toggleOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md p-5">
-            {menuItems.map((menu, index) => (
-              <div key={index} className="mb-4">
-                <p className="font-semibold text-lg mb-2">{menu.title}</p>
-                <ul>
-                  {menu.items.map((item, idx) => (
-                    <li key={idx} className="py-1">
-                      <Link href={`/${item.toLowerCase().replace(/ /g, "-")}`}>
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+    <>
+      <div className="w-full  sticky top-0 z-10 bg-white">
+        <nav className="w-full max-w-[1220px] mx-auto sticky top-0 lg:mb-2 px-5 lg:px-0  lg:py-6 py-4  z-10 bg-white flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center">
+            <Image src="/isalogo.png" alt="Logo" width={60} height={30} />
           </div>
-        )}
-      </nav>
-    </div>
-  );
-};
 
-export default Navbar;
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex space-x-8 text-gray-700 font-semibold text-lg  ">
+            <Link href="#" className="hover:text-gray-500">
+              Solutions
+            </Link>
+            <Link href="#" className="hover:text-gray-500">
+              Industries
+            </Link>
+            <Link href="#" className="hover:text-gray-500">
+              Who We Are
+            </Link>
+            <Link href="#" className="hover:text-gray-500">
+              Resources + Insights
+            </Link>
+            <Link href="#" className="hover:text-gray-500">
+              Contact Us
+            </Link>
+            <span className="border-l h-5"></span>
+            <Link href="#" className="text-[#3E0392] hover:text-blue-800">
+              Quote Online
+            </Link>
+            <div className="w-8 h-8 mx-auto flex items-center justify-center rounded-full text-xl bg-[#CA93F55E]">
+              <Search className="w-5 h-5 text-black" />
+            </div>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="lg:hidden text-gray-800"
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+
+          {/* Mobile Menu */}
+          {isOpen && (
+            <div className="absolute top-16 left-0 w-full bg-white shadow-md lg:hidden flex flex-col space-y-4 p-6 text-gray-800 text-sm font-medium">
+              <Link href="#" className="hover:text-gray-500">
+                Solutions
+              </Link>
+              <Link href="#" className="hover:text-gray-500">
+                Industries
+              </Link>
+              <Link href="#" className="hover:text-gray-500">
+                Who We Are
+              </Link>
+              <Link href="#" className="hover:text-gray-500">
+                Resources + Insights
+              </Link>
+              <Link href="#" className="hover:text-gray-500">
+                Contact Us
+              </Link>
+              <span className="border-t my-2"></span>
+              <Link href="#" className="text-[#3E0392] hover:text-blue-800">
+                Quote Online
+              </Link>
+            </div>
+          )}
+        </nav>
+      </div>
+    </>
+  );
+}

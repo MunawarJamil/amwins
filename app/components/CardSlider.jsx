@@ -66,7 +66,7 @@ const CardSlider = () => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true} // ✅ Centers the active slide
-        slidesPerView={"3"} // Show 3 slides at a time
+        slidesPerView={"auto"} // Show 3 slides at a time
         spaceBetween={30}
         breakpoints={{
           640: { slidesPerView: 1 },
