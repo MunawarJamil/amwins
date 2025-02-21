@@ -2,15 +2,15 @@ import { Mail, Facebook, Instagram, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <>
-      <footer className="w-[1350px] mx-auto bg-white py-10 pt-20 px-5  md:px-20 flex flex-col md:flex-row justify-between items-start md:items-center">
+    <div className="w-full h-[400px] bg-white">
+      <footer className="max-w-[1350px] mx-auto py-10 px-5 md:px-20 flex flex-col md:flex-row justify-between items-start md:items-center">
         {/* Left Section */}
         <div className="md:w-1/2 relative">
           <h2 className="text-3xl md:text-5xl font-semibold text-black leading-normal">
-            Let’s talk <br /> about your <br /> project.
+            Let's talk <br /> about your <br /> project.
           </h2>
           <p className="absolute text-6xl font-semibold text-gray-200 left-5 top-32 hidden md:block">
-            Let’s talk
+            Let's talk
           </p>
         </div>
 
@@ -47,24 +47,23 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
-        {/* Social Icons */}
       </footer>
 
-      <div className="mt-10 flex  justify-between pb-20 w-[1200px] mx-auto items-center gap-2 border-b   border-black  ">
-        <input
-          type="email"
-          placeholder="eg. johnsmith@email.com"
-          className="bg-transparent border-b py-3 outline-none text-gray-600 text-sm"
-        />
-
-        <div className="flex gap-5 mt-10 md:mt-0 justify-end w-full md:w-auto">
-          <Facebook className="text-gray-600" size={20} />
-          <Instagram className="text-gray-600" size={20} />
-          <Twitter className="text-gray-600" size={20} />
+      <div className="max-w-[1200px] mx-auto px-5 pb-20">
+        <div className="flex justify-between items-center gap-2 border-b border-black py-4">
+          <input
+            type="email"
+            placeholder="eg. johnsmith@email.com"
+            className="bg-transparent border-b py-3 outline-none text-gray-600 text-sm"
+          />
+          <div className="flex gap-5 mt-0 justify-end">
+            <Facebook className="text-gray-600" size={20} />
+            <Instagram className="text-gray-600" size={20} />
+            <Twitter className="text-gray-600" size={20} />
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
