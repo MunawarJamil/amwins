@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Resources = () => {
   return (
-    <div className="mt-16 px-4 md:px-8 lg:px-32 max-w-[1480px] mx-auto">
+    <div className="mt-16 px-4 md:px-8 lg:px-32 max-w-[1500px] mx-auto">
       {/* Header */}
       <div className="text-3xl md:text-4xl lg:text-5xl">
         <h1 className="font-bold">Property Resources + Insights</h1>
@@ -26,7 +26,7 @@ const Resources = () => {
       {/* Main Content */}
       <div className="flex flex-col lg:flex-row mt-8 md:mt-12 ml-24">
         {/* Grid Content */}
-        <div className="w-full lg:w-[600px] mt-10 gap-10">
+        <div className="w-full lg:w-[700px] mt-10 gap-10">
           <div className="space-y-8">
             {/* Item 1 */}
             <div className="border-b border-[#CA93F5] pb-4 py-5">
@@ -68,7 +68,7 @@ const Resources = () => {
         {/* Image */}
         <div className="w-full lg:w-auto mt-8 lg:mt-0">
           <img 
-            className="w-full lg:w-[400px] h-[300px] lg:h-[440px] object-cover mx-auto lg:ml-24" 
+            className="w-full lg:w-[350px] lg:h-[400px] object-cover mx-auto lg:ml-20 lg:pb-5 absolute" 
             src="/insurance-images/img/zoom.png" 
             alt="Resources illustration" 
           />
