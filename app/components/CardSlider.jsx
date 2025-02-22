@@ -61,7 +61,7 @@ const CardSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="w-full border py-10  mt-12">
+    <div className="w-full lg:border lg:py-10 mt-5 lg:mt-12">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

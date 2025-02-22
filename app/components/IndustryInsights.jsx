@@ -77,7 +77,7 @@ export default function IndustryInsights() {
 
 
 
-      <section className="     mt-10     py-20"
+      <section className="     lg:mt-10     py-20"
       style={{backgroundImage: "url('/Our-History.png')", backgroundSize: "cover", backgroundPosition: "center"}}
       >
         <div className="grid grid-cols-1 w-full max-w-7xl px-6 items-center mx-auto sm:grid-cols-2 lg:grid-cols-4 gap-6">

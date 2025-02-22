@@ -52,7 +52,7 @@ export default function InsuranceResources() {
 
   return (
     <>
-      <section className="py-12 bg-gray-50 px-7 md:text-center mt-10 ">
+      <section className="py-12 bg-[#F5F5F5] px-7 md:text-center mt-10 ">
         <div className="lg:max-w-[1250px] mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             Comprehensive Industry Expertise
@@ -71,14 +71,15 @@ export default function InsuranceResources() {
           {industries.map((industry, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg  p-5 shadow-md overflow-hidden transition-transform duration-300 hover:scale-105"
+              className="bg-white rounded-2xl  p-5 shadow-md overflow-hidden transition-transform duration-300 hover:scale-105"
             >
-              <div className="relative w-full h-40">
+              <div className="relative w-full rounded-xl h-40">
                 <Image
                   src={industry.img}
                   alt={industry.name}
                   layout="fill"
-                  objectFit="cover"
+                  objectFit="cover "
+                  className="rounded-xl"
                 />
               </div>
               <div className="p-4 text-center">
