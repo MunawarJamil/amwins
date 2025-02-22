@@ -17,10 +17,10 @@ const ReuseableHero = ({
         width={1000}
         height={1000}
         objectFit="cover"
-        className="sm:h-auto h-screen  w-screen"
+        className="sm:h-auto h-[60vh]  w-screen"
       />
-      <div className="absolute inset-0 flex px-10 justify-center items-center">
-        <div className=" relative  flex sm:flex-row flex-col w-full max-w-6xl">
+      <div className="absolute inset-0 flex justify-center items-center">
+        <div className=" relative  flex sm:flex-row px-4 flex-col w-full max-w-6xl">
           {/* Left Content */}
           <div className="sm:w-1/2 text-white flex flex-col justify-center space-y-4 sm:space-y-10">
             <h2 className="text-3xl sm:text-5xl font-bold">{heading}</h2>
