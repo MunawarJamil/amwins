@@ -45,6 +45,7 @@ const Resources = () => {
                 </p>
               </div>
             </div>
+      
 
             {/* Item 3 */}
             <div className="border-b border-[#CA93F5] pb-4 py-5">
