@@ -11,13 +11,13 @@ export default function IndustryInsights() {
   ];
   return (
     <>
-      <section className="flex flex-col lg:flex-row lg:w-[1205px] mx-auto items-stretch lg:items-center border shadow-md px-6 py-12">
+      <section className="flex flex-col lg:flex-row w-full max-w-7xl  mx-auto   lg:items-center        py-12">
         {/* Left Image Section */}
         <div className="w-full  flex">
-          <div className=" ">
+          <div className="hidden lg:block ">
             <Image
               src="/Image-Placeholder.png" // Replace with your actual image path
-              width={400}
+              width={700}
               height={300}
               alt="Business Professional"
               className="rounded-lg    object-cover"
@@ -25,11 +25,11 @@ export default function IndustryInsights() {
           </div>
 
           {/* Right Content Section */}
-          <div className="w-full lg:w-[60%] flex flex-col   leading-normal pt-5 px-6">
-            <h2 className="text-4xl font-bold leading-normal">
-              Where industry insights meet <br /> wholesale excellence.
+          <div className="w-full max-w-5xl flex flex-col   leading-normal lg:pt-5 px-6">
+            <h2 className=" text-3xl  lg:text-6xl font-semibold  text-gray-800">
+              Where industry <br /> insights meet <br /> wholesale excellence.
             </h2>
-            <p className="mt-4 text-gray-600 leading-normal">
+            <p className="mt-5 text-gray-600 leading-normal  ">
               ISA delivers future-focused insurance solutions, leveraging deep
               industry expertise, strong partnerships, and advanced analytics.
               With a global reach and specialized teams, we help you navigate
@@ -73,14 +73,20 @@ export default function IndustryInsights() {
         </div>
       </section>
 
-      <section className="px-6 lg:px-20   mt-10   shadow-md py-10">
-        <div className="grid grid-cols-1 lg:w-[1200px] mx-auto sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+
+
+      <section className="     mt-10     py-20"
+      style={{backgroundImage: "url('/Our-History.png')", backgroundSize: "cover", backgroundPosition: "center"}}
+      >
+        <div className="grid grid-cols-1 w-full max-w-7xl px-6 items-center mx-auto sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className={`p-6 text-center rounded-lg shadow-md ${
+              className={`py-7 text-center rounded-lg shadow-md  ${
                 stat.highlight
-                  ? "bg-gray-900 text-white"
+                  ? "bg-gradient-to-b from-[#11071F] to-[#32155C]  text-white"
                   : "bg-white text-gray-900"
               }`}
             >

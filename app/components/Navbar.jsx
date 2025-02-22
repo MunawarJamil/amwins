@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <>
       <div className="w-full  sticky top-0 z-10 bg-white">
-        <nav className="w-full max-container justify-between   lg-px-0 lg:justify-evenly mx-auto sticky top-0 lg:mb-2 px-5 lg:px-0  lg:py-6 py-4  z-10 bg-white flex items-center  ">
+        <nav className="w-full max-w-7xl justify-between   lg-px-8 mx-auto sticky top-0 lg:mb-2 px-5   lg:py-6 py-4  z-10 bg-white flex items-center  ">
           {/* Logo */}
           <div className="flex items-center">
             <Image src="/isalogo.png" alt="Logo" width={60} height={30} />
