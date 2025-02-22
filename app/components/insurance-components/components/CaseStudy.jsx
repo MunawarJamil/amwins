@@ -2,7 +2,7 @@ import React from "react";
 
 const CaseStudy = () => {
   return (
-    <div className="bg-[url('/insurance-images/img/offwhitebg.jpg')] bg-cover bg-no-repeat w-[1220px] h-[550px] mx-auto relative mt-40">
+    <div className="bg-[url('/insurance-images/img/offwhitebg.jpg')] bg-cover bg-no-repeat w-full h-[550px] mx-auto relative mt-40">
       <div className="absolute inset-0 flex items-center justify-center -translate-y-12"> {/* Shifted up by 3rem (48px) */}
         <div className="bg-gradient-to-b from-black to-purple-950 text-white mx-4 md:mx-auto max-w-[1100px] h-[430px] lg:px-12 lg:py-20 mt-40 md:mt-24 lg:mt-48 rounded-3xl mb-12 md:mb-24">
           <div className="flex flex-col lg:flex-row justify-between lg:gap-6">

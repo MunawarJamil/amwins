@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import { BiBuildings } from "react-icons/bi";
 
@@ -53,15 +54,15 @@ const PropertySpecialties = () => {
   return (
     <>
       {/* 1) SPECIALTIES GRID */}
-      <div className="w-[1260px] mx-auto px-4 py-28">
-        <h1 className="text-6xl font-bold text-gray-800 mb-8 ">
+      <div className="w-[1260px] mx-auto px-4 py-12">
+        <h1 className="text-6xl font-bold text-black mb-8">
           Property areas of specialty
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {specialties.map((specialty, index) => (
             <div
               key={index}
-              className="border border-blue-500 rounded p-6 flex items-start relative" // Added 'relative' for positioning
+              className="shadow-[0_0_10px_rgba(0,0,0,0.2)] rounded p-6 flex items-start relative" // Replaced 'shadow-md' with custom shadow for 4 sides
             >
               {/* Icon (Square Checkmark at Top Left Corner) */}
               <div className="absolute top-1 left-1 w-14 h-14">
@@ -90,7 +91,7 @@ const PropertySpecialties = () => {
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">
                   {specialty.title}
                 </h2>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-black leading-relaxed">
                   {specialty.description}
                 </p>
               </div>
@@ -100,23 +101,24 @@ const PropertySpecialties = () => {
       </div>
 
       {/* 2) EXCLUSIVE PROPERTY CAPACITY */}
-      <div className="w-[1230px] mx-auto px-12 mt-9 border border-blue-500 flex flex-col md:flex-row items-start md:items-center gap-6 py-8 ">
-        {/* Icon + Title */}
-        <div className="md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left">
-          <BiBuildings className="w-12 h-12 text-gray-700 mb-2" />
-          <h1 className="font-bold text-lg">Exclusive property capacity</h1>
-        </div>
-
-        {/* Description */}
-        <div className="md:w-2/3">
-          <p className="text-gray-700">
-            Brokerage Special Risk Underwriters (SRU) provides CAT-exposed
-            property capacity, available exclusively through Brokerage, along
-            with supplemental products like builder’s risk, earthquake, wind,
-            and AOP deductible buyback. In a tightening market where capacity is
-            shrinking for these risks, SRU continues to expand exclusive
-            offerings.
-          </p>
+      <div className="bg-[url('/insurance-images/img/offwhitebg.jpg')] bg-cover bg-no-repeat w-full h-[300px] flex items-center justify-center">
+        <div className="w-[1230px] mx-auto px-12 pt-12 shadow-[0_0_10px_rgba(0,0,0,0.2)] flex flex-col md:flex-row items-start md:items-center gap-6 py-8 rounded">
+          {/* Icon + Title */}
+          <div className="md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left">
+            <BiBuildings className="w-12 h-12 text-black mb-2" />
+            <h1 className="font-bold text-lg">Exclusive property capacity</h1>
+          </div>
+          {/* Description */}
+          <div className="md:w-2/3">
+            <p className="text-black">
+              Brokerage Special Risk Underwriters (SRU) provides CAT-exposed
+              property capacity, available exclusively through Brokerage, along
+              with supplemental products like builder’s risk, earthquake, wind,
+              and AOP deductible buyback. In a tightening market where capacity
+              is shrinking for these risks, SRU continues to expand exclusive
+              offerings.
+            </p>
+          </div>
         </div>
       </div>
     </>
