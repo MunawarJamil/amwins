@@ -4,10 +4,10 @@ import Link from "next/link";
 
 const Resources = () => {
   return (
-    <div className="mt-16 px-4 md:px-8 lg:px-32 max-w-[1460px] mx-auto">
+    <div className="mt-16 px-4 md:px-8 lg:px-32 max-w-[1480px] mx-auto">
       {/* Header */}
       <div className="text-3xl md:text-4xl lg:text-5xl">
-        <h1>Property Resources + Insights</h1>
+        <h1 className="font-bold">Property Resources + Insights</h1>
       </div>
 
       {/* Subheader */}
@@ -17,14 +17,14 @@ const Resources = () => {
         </p>
         <Link 
           href="/" 
-          className="text-blue-500 underline hover:text-blue-700 mt-4 md:mt-0 pr-40"
+          className="text-blue-500 underline hover:text-blue-700 mt-4 md:mt-0 pr-3"
         >
           View All Resources
         </Link>
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row mt-8 md:mt-12">
+      <div className="flex flex-col lg:flex-row mt-8 md:mt-12 ml-24">
         {/* Grid Content */}
         <div className="w-full lg:w-[600px] mt-10 gap-10">
           <div className="space-y-8">
@@ -67,7 +67,7 @@ const Resources = () => {
         {/* Image */}
         <div className="w-full lg:w-auto mt-8 lg:mt-0">
           <img 
-            className="w-full lg:w-[400px] h-[250px] lg:h-[440px] object-cover mx-auto lg:ml-8" 
+            className="w-full lg:w-[400px] h-[300px] lg:h-[440px] object-cover mx-auto lg:ml-24" 
             src="/insurance-images/img/zoom.png" 
             alt="Resources illustration" 
           />
