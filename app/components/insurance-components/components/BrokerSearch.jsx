@@ -58,7 +58,7 @@ const BrokerSearch = () => {
       <div className="w-full mx-auto bg-black p-8 ">
       
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-white text-4xl font-bold mb-8 ml-6 ">Property Broker search</h2>
+          <h2 className="text-white text-4xl font-bold mb-8 ml-7 ">Property Broker search</h2>
           
           <div className="flex gap-1 p-1 bg-[#CA93F5] rounded-lg w-[1220px] mx-auto">
             <input

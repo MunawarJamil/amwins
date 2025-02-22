@@ -104,7 +104,7 @@ const PropertyInsurance = () => {
           {/* Left content section */}
 
           <div className="flex-1 ">
-            <h1 className="text-6xl font-bold mb-4">
+            <h1 className="text-6xl font-bold mb-4 w-[600px]">
               Property Insurance That Delivers A Distinct Advantage
             </h1>
 

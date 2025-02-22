@@ -54,7 +54,7 @@ const PropertySpecialties = () => {
     <>
       {/* 1) SPECIALTIES GRID */}
       <div className="w-[1260px] mx-auto px-4 py-28">
-        <h1 className="text-3xl font-bold text-gray-800 mb-8">
+        <h1 className="text-6xl font-bold text-gray-800 mb-8 ">
           Property areas of specialty
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

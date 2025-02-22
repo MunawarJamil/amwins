@@ -6,13 +6,13 @@ const Resources = () => {
   return (
     <div className="mt-16 px-4 md:px-8 lg:px-32 max-w-[1500px] mx-auto">
       {/* Header */}
-      <div className="text-3xl md:text-4xl lg:text-5xl">
-        <h1 className="font-bold">Property Resources + Insights</h1>
+      <div className=" md:text-6xl lg:text-6xl">
+        <h1 className="font-bold ml-2">Property Resources + Insights</h1>
       </div>
 
       {/* Subheader */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mt-4 md:mt-6">
-        <p className="text-sm md:text-base max-w-md">
+        <p className="text-sm md:text-base max-w-md ml-3">
           Stay up-to-date on emerging property insurance trends and topics
         </p>
         <Link 
